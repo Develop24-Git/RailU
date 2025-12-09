@@ -3,29 +3,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_transform">
+    app:startDestination="@+id/nav_main">
 
     <fragment
-        android:id="@+id/nav_transform"
-        android:name="kr.co.dothome.projects.ui.transform.TransformFragment"
-        android:label="@string/menu_transform"
-        tools:layout="@layout/fragment_transform" />
+        android:id="@+id/nav_main"
+        android:name="kr.co.dothome.projects.ui.main.MainFragment"
+        android:label="@string/main_menu"
+        tools:layout="@layout/fragment_main" />
+
+<fragment
+        android:id="@+id/nav_article"
+        android:name="kr.co.dothome.projects.ui.drawer.article.ArticleFragment"
+        android:label="@string/drawer_menu_article"
+        tools:layout="@layout/fragment_article" />
 
     <fragment
-        android:id="@+id/nav_reflow"
-        android:name="kr.co.dothome.projects.ui.reflow.ReflowFragment"
-        android:label="@string/menu_reflow"
-        tools:layout="@layout/fragment_reflow" />
+        android:id="@+id/nav_certificate"
+        android:name="kr.co.dothome.projects.ui.drawer.certificate.CertificateFragment"
+        android:label="@string/drawer_menu_certificate"
+        tools:layout="@layout/fragment_certificate" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="kr.co.dothome.projects.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_how"
+        android:name="kr.co.dothome.projects.ui.drawer.how.HowFragment"
+        android:label="@string/drawer_menu_how"
+        tools:layout="@layout/fragment_how" />
+
+    <fragment
+        android:id="@+id/nav_individual"
+        android:name="kr.co.dothome.projects.ui.drawer.individual.IndividualFragment"
+        android:label="@string/drawer_menu_individual"
+        tools:layout="@layout/fragment_individual" />
+
+    <fragment
+        android:id="@+id/nav_inspection"
+        android:name="kr.co.dothome.projects.ui.drawer.inspection.InspectionFragment"
+        android:label="@string/drawer_menu_inspection"
+        tools:layout="@layout/fragment_inspection" />
+
+    <fragment
+        android:id="@+id/nav_location"
+        android:name="kr.co.dothome.projects.ui.drawer.location.LocationFragment"
+        android:label="@string/drawer_menu_location"
+        tools:layout="@layout/fragment_location" />
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="kr.co.dothome.projects.ui.drawer.notification.NotificationFragment"
+        android:label="@string/drawer_menu_notification"
+        tools:layout="@layout/fragment_notification" />
 
     <fragment
         android:id="@+id/nav_settings"
-        android:name="kr.co.dothome.projects.ui.settings.SettingsFragment"
-        android:label="@string/menu_settings"
+        android:name="kr.co.dothome.projects.ui.drawer.settings.SettingsFragment"
+        android:label="@string/drawer_menu_settings"
         tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_individual"
+        android:name="kr.co.dothome.projects.ui.drawer.individual.IndividualFragment"
+        android:label="@string/drawer_menu_individual"
+        tools:layout="@layout/fragment_individual" />
 </navigation>
