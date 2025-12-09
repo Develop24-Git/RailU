@@ -5,20 +5,40 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_transform"
-            android:icon="@drawable/ic_camera_black_24dp"
-            android:title="@string/menu_transform" />
+            android:id="@+id/nav_article"
+            android:icon="@drawable/ic_drawer_article"
+            android:title="@string/drawer_menu_article" />
         <item
-            android:id="@+id/nav_reflow"
-            android:icon="@drawable/ic_gallery_black_24dp"
-            android:title="@string/menu_reflow" />
+            android:id="@+id/nav_inspection"
+            android:icon="@drawable/ic_drawer_inspection"
+            android:title="@string/drawer_menu_inspection" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_slideshow_black_24dp"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_drawer_notification"
+            android:title="@string/drawer_menu_notification" />
+        <item
+            android:id="@+id/nav_how"
+            android:icon="@drawable/ic_drawer_how"
+            android:title="@string/drawer_menu_how" />
+        <item
+            android:id="@+id/nav_certificate"
+            android:icon="@drawable/ic_drawer_certificate"
+            android:title="@string/drawer_menu_certificate" />
         <item
             android:id="@+id/nav_settings"
-            android:icon="@drawable/ic_settings_black_24dp"
-            android:title="@string/menu_settings" />
+            android:icon="@drawable/ic_drawer_settings"
+            android:title="@string/drawer_menu_settings" />
+        <item
+            android:id="@+id/nav_individual"
+            android:icon="@drawable/ic_drawer_individual"
+            android:title="@string/drawer_menu_individual" />
+        <item
+            android:id="@+id/nav_utilization"
+            android:icon="@drawable/ic_drawer_utilization"
+            android:title="@string/drawer_menu_utilization" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_drawer_location"
+            android:title="@string/drawer_menu_location" />
     </group>
 </menu>

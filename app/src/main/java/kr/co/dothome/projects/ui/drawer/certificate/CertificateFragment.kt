@@ -1,4 +1,4 @@
-package kr.co.dothome.projects.ui.settings
+package kr.co.dothome.projects.ui.drawer.certificate
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import kr.co.dothome.projects.databinding.FragmentSettingsBinding
+import kr.co.dothome.projects.databinding.FragmentCertificateBinding
 
-class SettingsFragment : Fragment() {
+class CertificateFragment : Fragment() {
 
-    private var _binding: FragmentSettingsBinding? = null
+    private var _binding: FragmentCertificateBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class SettingsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val settingsViewModel =
-            ViewModelProvider(this).get(SettingsViewModel::class.java)
+        val certificateViewModel =
+            ViewModelProvider(this)[CertificateViewModel::class.java]
 
-        _binding = FragmentSettingsBinding.inflate(inflater, container, false)
+        _binding = FragmentCertificateBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textSettings
-        settingsViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textCertificate
+        certificateViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

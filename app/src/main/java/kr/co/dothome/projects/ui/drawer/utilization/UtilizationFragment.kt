@@ -1,4 +1,4 @@
-package kr.co.dothome.projects.ui.reflow
+package kr.co.dothome.projects.ui.drawer.utilization
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import kr.co.dothome.projects.databinding.FragmentReflowBinding
+import kr.co.dothome.projects.databinding.FragmentUtilizationBinding
 
-class ReflowFragment : Fragment() {
+class UtilizationFragment : Fragment() {
 
-    private var _binding: FragmentReflowBinding? = null
+    private var _binding: FragmentUtilizationBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class ReflowFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val reflowViewModel =
-            ViewModelProvider(this).get(ReflowViewModel::class.java)
+        val utilizationViewModel =
+            ViewModelProvider(this)[UtilizationViewModel::class.java]
 
-        _binding = FragmentReflowBinding.inflate(inflater, container, false)
+        _binding = FragmentUtilizationBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textReflow
-        reflowViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textUtilization
+        utilizationViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

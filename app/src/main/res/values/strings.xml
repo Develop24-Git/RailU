@@ -7,9 +7,22 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_transform">Transform</string>
-    <string name="menu_reflow">Reflow</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="bottom_menu_train">열차정보</string>
+    <string name="bottom_menu_abbreviation">교통약자</string>
+    <string name="bottom_menu_report">민원신고</string>
+    <string name="bottom_menu_facilities">편의사설</string>
+    <string name="bottom_menu_web">웹사이트</string>
+
+    <string name="drawer_menu_article">유실물</string>
+    <string name="drawer_menu_inspection">승강기 점검 정비 현황</string>
+    <string name="drawer_menu_notification">공지사항</string>
+    <string name="drawer_menu_how">사용방법</string>
+    <string name="drawer_menu_certificate">간편지연증명서</string>
+    <string name="drawer_menu_settings">환경설정</string>
+    <string name="drawer_menu_individual">개인정보 처리방침</string>
+    <string name="drawer_menu_utilization">이용약관</string>
+    <string name="drawer_menu_location">위치정보 처리방침</string>
+
     <string name="menu_settings">Settings</string>
 
     <string name="lorem_ipsum_title">Lorem Ipsum"</string>

@@ -1,13 +1,13 @@
-package kr.co.dothome.projects.ui.settings
+package kr.co.dothome.projects.ui.drawer.how
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SettingsViewModel : ViewModel() {
+class HowViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is settings Fragment"
+        value = "This is how Fragment"
     }
     val text: LiveData<String> = _text
 }
